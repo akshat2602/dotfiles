@@ -1,0 +1,106 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "editor.inlineSuggest.enabled": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "yaml": false,
+        "javascript": true,
+        "typescriptreact": true,
+        "python": true,
+        "sql": false,
+        "rust": false
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "files.associations": {
+        "*.py": "python"
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "material-icon-theme.activeIconPack": "react_redux",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "bracketPairColorizer.depreciation-notice": false,
+    "svelte.enable-ts-plugin": true,
+    "prettier.tabWidth": 4,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "go.autocompleteUnimportedPackages": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "python.formatting.provider": "black",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "workbench.settings.editor": "json",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "cmake.configureOnOpen": false,
+    "remote.SSH.defaultForwardedPorts": [],
+    "remote.SSH.lockfilesInTmp": true,
+    "workbench.editor.empty.hint": "hidden",
+    "cmake.showOptionsMovedNotification": false,
+    "telemetry.telemetryLevel": "off",
+    "database-client.telemetry.usesOnlineServices": false,
+    "gitlens.telemetry.enabled": false,
+    "[dockercompose]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "workbench.sideBar.location": "right",
+    "todo.embedded.providers.rg.regex": "(?:#|// @|//|/\\*+|<!--|--|\\* @|\\{!|\\{\\{!--|\\{\\{!) *(TODO|FIXME|FIX|BUG|UGLY|HACK|NOTE|IDEA|REVIEW|DEBUG|OPTIMIZE|AKSHAT)",
+    "todo.embedded.providers.ag.regex": "(?:#|// @|//|/\\*+|<!--|--|\\* @|\\{!|\\{\\{!--|\\{\\{!) *(TODO|FIXME|FIX|BUG|UGLY|HACK|NOTE|IDEA|REVIEW|DEBUG|OPTIMIZE|AKSHAT)",
+    "todo.embedded.regex": "(?:<!-- *)?(?:#|// @|//|/\\*+|<!--|--|\\* @|\\{!|\\{\\{!--|\\{\\{!) *(TODO|FIXME|FIX|BUG|UGLY|HACK|NOTE|IDEA|REVIEW|DEBUG|OPTIMIZE|AKSHAT)(?:\\s*\\([^)]+\\))?:?(?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|\\{!|\\{\\{!--|\\{\\{!))|((?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|\\{!|\\{\\{!--|\\{\\{!))|(?: +[^@\\n]+)?))",
+    "todo.colors.types": {
+        "AKSHAT": "#ffcc00",
+        "TODO": "#ffcc00",
+        "FIXME": "#cc0000",
+        "FIX": "#cc0000",
+        "BUG": "#cc0000",
+        "UGLY": "#cc0000",
+        "DEBUG": "#cc0000",
+        "HACK": "#cc0000",
+        "REVIEW": "#00ccff",
+        "OPTIMIZE": "#00ccff",
+        "TSC": "#00ccff",
+        "NOTE": "#cc00cc",
+        "IDEA": "#cc00cc"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "workbench.colorTheme": "Dracula Theme",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "window.zoomLevel": 1,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "gitlens.launchpad.indicator.enabled": false,
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    
+}
