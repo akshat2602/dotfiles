@@ -1,0 +1,29 @@
+wm.workspace.01.name:   1: 1
+wm.workspace.02.name:   2: 2
+wm.workspace.03.name:   3: 3
+wm.workspace.04.name:   4: 4
+wm.workspace.05.name:   5: 5
+wm.workspace.06.name:   6: 6
+wm.workspace.07.name:   7: 7
+wm.workspace.08.name:   8: 8
+wm.workspace.09.name:   9: 9
+wm.workspace.10.name:   10: 10
+wm.workspace.11.name:   11: 11
+wm.workspace.12.name:   12: 12
+wm.workspace.13.name:   13: 13
+wm.workspace.14.name:   14: 14
+wm.workspace.15.name:   15: 15
+wm.workspace.16.name:   16: 16
+wm.workspace.17.name:   17: 17
+wm.workspace.18.name:   18: 18
+wm.workspace.19.name:   19: 19
+
+gnome.terminal.font:	Fira Mono Regular 12
+gtk.font_name:	Noto Sans Regular 12
+gtk.document_font_name:	Noto Serif Regular 12
+gtk.monospace_font_name:	Fira Mono Regular 12
+i3xrocks.value.font:	Noto Sans Regular 12
+wm.bar.font:	Noto Sans Regular 12
+wm.bar.position:	top
+wm.gaps.inner.size: 1
+wm.window.border.size: 3
