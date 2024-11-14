@@ -13,16 +13,16 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "github.copilot.enable": {
-        "*": false,
+        "*": true,
         "plaintext": false,
         "markdown": false,
         "scminput": false,
         "yaml": false,
         "javascript": true,
         "typescriptreact": true,
-        "python": true,
+        "python": false,
         "sql": false,
-        "rust": false
+        "rust": true
     },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -92,9 +92,8 @@
         "IDEA": "#cc00cc"
     },
     "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.colorTheme": "Dracula Theme",
     "github.copilot.editor.enableAutoCompletions": true,
     "window.zoomLevel": 1,
     "diffEditor.ignoreTrimWhitespace": false,
@@ -102,5 +101,14 @@
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "remote.SSH.remotePlatform": {
+        "chenab": "linux"
+    },
+    "workbench.colorTheme": "Dracula Theme",
+    "leetcode.workspaceFolder": "/home/akshat/Projects/leetcode-solutions",
+    "leetcode.defaultLanguage": "python3",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.hint.commentDescription": false,
+    "leetcode.hint.commandShortcut": false,
     
 }
