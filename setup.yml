@@ -1,0 +1,71 @@
+---
+- name: Setup Ubuntu System
+  hosts: localhost
+  become: true
+  vars_files:
+    - vars/apt_packages.yml
+    - vars/custom_ppas.yml
+    - vars/flatpak_packages.yml
+    - vars/deb_packages.yml
+
+  tasks:
+
+    - name: Add custom PPAs
+      apt_repository:
+        repo: "{{ item }}"
+        state: present
+      loop: "{{ custom_ppas }}"
+      when: custom_ppas is defined
+
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install apt packages
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop: "{{ apt_packages }}"
+      when: apt_packages is defined
+
+    - name: Install Flatpak (if not installed)
+      ansible.builtin.apt:
+        name: flatpak
+        state: present
+      when: ansible_facts.packages.flatpak is not defined
+
+    - name: Add Flatpak repository (Flathub)
+      shell: |
+        flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+      args:
+        warn: false
+      when: "'flathub' not in ansible_facts.packages['flatpak']['remotes']"
+
+    - name: Install Flatpak packages
+      shell: |
+        flatpak install -y flathub {{ item }}
+      loop: "{{ flatpak_packages }}"
+      when: flatpak_packages is defined
+
+    - name: Install local .deb files
+      apt:
+        deb: "{{ item }}"
+        state: present
+      loop: "{{ deb_files }}"
+      when: deb_files is defined
+
+    - name: Download and install .deb files from URLs
+      apt:
+        deb: "/tmp/{{ item.split('/')[-1] }}"
+        state: present
+      loop: "{{ deb_urls }}"
+      when: deb_urls is defined
+      notify: cleanup_deb_files
+
+  handlers:
+    - name: cleanup_deb_files
+      file:
+        path: "/tmp/{{ item.split('/')[-1] }}"
+        state: absent
+      loop: "{{ deb_urls }}"
+
