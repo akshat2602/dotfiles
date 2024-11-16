@@ -1,0 +1,26 @@
+icons_format = "{icon}"
+
+[theme]
+theme = "dracula"
+[theme.overrides]
+
+[icons]
+icons = "awesome6"
+
+[[block]]
+block = "net"
+format = " $icon {$ssid} "
+
+[[block]]
+block = "battery"
+
+[[block]]
+block = "rofication"
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "time"
+interval = 5
+format = " $timestamp.datetime(f:'%d/%m %R') "

@@ -27,3 +27,4 @@ wm.bar.font:	Noto Sans Regular 12
 wm.bar.position:	top
 wm.gaps.inner.size: 1
 wm.window.border.size: 3
+wm.bar.status_config: ~/.config/regolith3/i3status-rs-config.toml
