@@ -1,7 +1,7 @@
 [user]
 	email = akshatsharma2602@gmail.com
 	name = Akshat Sharma
-	signingkey = /home/akshat/.ssh/id_github_ed25519.pub
+	signingkey = ~/.ssh/id_github_ed25519.pub
 [credential]
 	helper = store
 [rerere]
