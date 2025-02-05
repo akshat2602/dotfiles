@@ -22,7 +22,7 @@
         "typescriptreact": true,
         "python": false,
         "sql": false,
-        "rust": true
+        "rust": false
     },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"

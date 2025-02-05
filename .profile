@@ -35,3 +35,8 @@ export PATH="$PATH:/home/akshat/.local/share/JetBrains/Toolbox/scripts"
 export GTK_THEME=dracula
 
 export CVS_RSH=ssh
+
+. "$HOME/.local/bin/env"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/bunty/.cache/lm-studio/bin"

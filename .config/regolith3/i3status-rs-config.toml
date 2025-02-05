@@ -8,6 +8,17 @@ theme = "dracula"
 icons = "awesome6"
 
 [[block]]
+block = "pomodoro"
+notify_cmd = "notify-send '{msg}'"
+blocking_cmd = false
+
+[[block]]
+block = "focused_window"
+[block.format]
+full = " $title.str |"
+short = " $title.str(max_w:15) |"
+
+[[block]]
 block = "net"
 format = " $icon {$ssid} "
 

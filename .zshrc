@@ -7,7 +7,8 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+export PATH="$HOME/verus:$PATH"
+export PATH=$PATH:/.local/bin
 export PATH=/usr/local/texlive/2024/bin/x86_64-linux:$PATH 
 export ZSH="$HOME/.oh-my-zsh"
 export GOPATH="$HOME/go"
@@ -131,3 +132,9 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+. "$HOME/.local/bin/env"
+
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/bunty/.cache/lm-studio/bin"
